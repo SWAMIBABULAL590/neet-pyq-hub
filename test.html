@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NEET Mock Test</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>NEET Mock Test</h1>
+
+<div id="test"></div>
+
+<button onclick="submitTest()">Submit Test</button>
+
+<h2 id="score"></h2>
+
+<script>
+
+fetch('questions.json')
+.then(res=>res.json())
+.then(data=>{
+
+window.questions=data;
+
+let html="";
+
+data.forEach((q,index)=>{
+
+html+=`
+<div class="question-card">
+<h3>${index+1}. ${q.question}</h3>
+
+${q.options.map(op=>`
+<label>
+<input type="radio" name="${index}" value="${op}">
+${op}
+</label><br>
+`).join("")}
+
+</div>
+`;
+
+});
+
+document.getElementById("test").innerHTML=html;
+
+});
+
+function submitTest(){
+
+let score=0;
+
+questions.forEach((q,index)=>{
+
+let selected=document.querySelector(
+`input[name="${index}"]:checked`
+);
+
+if(selected && selected.value===q.answer){
+score++;
+}
+
+});
+
+document.getElementById("score").innerHTML=
+`Your Score: ${score}/${questions.length}`;
+
+}
+
+</script>
+
+</body>
+</html>
