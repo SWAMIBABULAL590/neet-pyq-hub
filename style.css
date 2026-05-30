@@ -15,19 +15,27 @@ header{
 }
 
 header h1{
+    color: white !important;
     margin: 0;
+    font-size: 40px;
 }
 
 header p{
-    margin: 10px 0;
+    color: white !important;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#search{
+    margin-top: 15px;
 }
 
 input,select{
-    padding: 10px;
-    width: 250px;
+    padding: 12px;
+    width: 280px;
     border-radius: 8px;
-    border: none;
-    margin-top: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
 }
 
 .filters{
@@ -60,4 +68,8 @@ button{
 
 button:hover{
     background: #084298;
+}
+
+h1{
+    color: #111;
 }
