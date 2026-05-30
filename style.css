@@ -73,3 +73,12 @@ button:hover{
 h1{
     color: #111;
 }
+
+header h1{
+    color: #ffffff !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    font-size: 42px !important;
+    font-weight: bold !important;
+}
