@@ -1,0 +1,23 @@
+[
+  {
+    "subject":"Biology",
+    "chapter":"Cell",
+    "question":"Powerhouse of the cell is?",
+    "options":["Nucleus","Mitochondria","Ribosome","Golgi Body"],
+    "answer":"Mitochondria"
+  },
+  {
+    "subject":"Physics",
+    "chapter":"Motion",
+    "question":"SI unit of velocity is?",
+    "options":["m/s","km/h","N","J"],
+    "answer":"m/s"
+  },
+  {
+    "subject":"Chemistry",
+    "chapter":"Atomic Structure",
+    "question":"Who discovered electron?",
+    "options":["Rutherford","Bohr","J.J. Thomson","Chadwick"],
+    "answer":"J.J. Thomson"
+  }
+]
